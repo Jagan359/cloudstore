@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+	before_action :authenticate_user!
   def index
   
   @t1= Time.now.strftime("%Y-%m-%d %H:%M:%S.%L");
